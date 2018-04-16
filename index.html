@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Homepage</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="agn2.css" rel="stylesheet">  
+		<!--[if lt IE 9]>
+			<script src=" http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--Logo-->
+		<div id="page">
+			<ul>
+				<li><header><a href="index.html"><img src="agnlogo2.jpg" alt="AGN logo" width="120" height="75"></a></header></li>
+				<li><a href="aboutUs.html">ABOUT US</a></li> <!--drop down menu-->
+				<li><a href="howUcanHelp.html">GET INVOLVED</a>
+					<ul>
+						<li><a href="donation.html">DONATION</a></li>
+						<li><a href="volunteer.html">VOLUNTEER</a></li> 
+					</ul>
+				</li>
+				<li><a href="PastEvents.html">NEWS</a></li>
+				<li><a href="Gallery.html">GALLERY</a></li>
+				<li><a href="Contact.html">CONTACT US</a></li>
+				<li><a href="donation.html"><button>Donate</button></a></li>
+				<!--donation should more appealing-->
+			</ul>
+		</div>
+		<main>
+			<!--put appealing pic here, full width-->
+			<div class="image">
+              <img class="mySlides" src="home1.png">
+              <img class="mySlides" src="home2.png">
+              <img class="mySlides" src="home3.png">
+            </div>
+			<script>
+              var myIndex = 0;
+              carousel();
+
+              function carousel() {
+               var i;
+               var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+              </script>
+				<!--main heading-->
+			<div>
+				<!--subheading-->
+				<h2>About AGN</h2>
+				<h3>AGN ACTS GLOBAL NETWORKING is a non-profit organisation focuses on education and social concern activities
+					in effort of uplifting poor community of Jinjang Utara and making a difference in their lives.</h3>
+		     </div>	
+			 <div id="part1">
+			<!--
+				<p>
+					AGN has been extending support, counselling and meeting the material needs of the needful 
+					community of Jinjang Utara for over fourteen years.
+				</p>-->
+				<div>
+					<h3>Our Mission</h3>
+					<p>
+						Transform and change Jinjang Utara community
+						through helping children - one child at a time.
+					</p>
+				</div>
+				<div>
+					<h3>Our Work</h3>
+					<ul>
+						<li>Education</li>
+						<li>Weekly outdoor activities</li>
+						<li>Weekly home visits</li>
+					<!--
+					<li>Healthcare</li>
+					<li>Nutrition</li>-->
+					</ul>
+					<!--button call to action-->
+				</div>
+				<button>
+						<a href="aboutUs.html">Discover more</a>
+				</button>	
+			</div>
+			
+			<!--intro to jinjang utara community-->
+			<div id="part2">
+					<h2>About Jinjang Utara community</h2>
+					<p>
+						Built on the city’s rubbish dump, Jinjang Utara is littered with dilapidated rumah transits that are 
+						currently housing 2000 families. They have waited for 40 years now to relocate to their new residence under 
+						Projek Perumahan Rakyat (PPR), 38 years later than the promised duration. Many people in the community 
+						live in abstract poverty and have to resort to illegal activities such as drug pushing and prostitution.
+				</div>
+			<div id="part3">
+				<!--background-->
+				<!--explanation-->
+				<div>
+					<h3>Housing condition</h3>
+					<p>
+						The integrity of their rumah transit is questionable as they were not built to last. They poses a health and safety hazard for the 
+						family staying under the roof and cramping in a 480-square-feet space. 
+					</p>
+				</div>
+				<div>
+					<h3>Average income</h3>
+					<p>
+						Average combined income per month for each family is less than RM1000. They are not be able to afford 
+						low cost housing as they can hardly afford the RM40 per month rent even now for the Rumah Panjang.
+					</p>
+				</div>
+				<div>
+					<h3>Children</h3>
+					<p>
+						Children in Jinjang Utara as young as 3 to 4 years old are often deprived of food for many days and survive on the occasional
+						leftovers offered by some kind neighbours. Some children abandoned by their parents or are neglected in an
+						environment of abject poverty. They are constantly subjected to danger of bad influence, perversion and exploitation daily under such conditions. 
+					</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<!--contact us in footer-->
+				Stay connected:
+				<br>
+				<a href="https://www.facebook.com/pg/Jinjang-Numeracy-Project-323424084690537/about/?ref=page_internal">
+					<img src="fb.png" alt="facebook" height="50" width="50">
+				</a> &nbsp;
+				<a href="mailto:maryjonathan.acts@gmail.com">
+					<img src="gmail.png" alt="gmail" height="50" width="50">
+				</a> &nbsp; <br>
+				<div class="call">
+				Call <a href="tel:+603-1234888">+603-1234888</a>
+				</div>
+			<small>Copyright &copy; 2018 | AGN ACTS Glabal Networking</small><br>
+			<small>Designed by: SICT Web Design</small><br>
+			<div id="modification">
+			Last updated:
+			<script>
+				document.write(document.lastModified);
+			</script>
+			</div>
+		</footer>
+	</body>
+</html>
+<!--data-autoplay: "true"
+<img src="image1.jpeg">
+
+<div class="navbar">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
+<a href="Donation.html"><img src="Donatebutton.png" alt="Donate Now!" width="100" height="100"></a>
